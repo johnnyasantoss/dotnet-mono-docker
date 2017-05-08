@@ -15,9 +15,10 @@ Good for building!
 - .NET Core 1.1 SDK
 - Mono (version 4.8.1)
   - mono-complete
+  - msbuild (15.1.0.0)
   - ca-certificates-mono
   - referenceassemblies-pcl
-  - nuget 3.5.0
+  - nuget (3.5.0)
 
 ### Runtime tag
 
@@ -29,13 +30,16 @@ Good for running!
   - mono-xsp4 (to run ASP.NET applications)
   - ca-certificates-mono
   - referenceassemblies-pcl
-  - nuget 3.5.0
+  - nuget (3.5.0)
 
-## Thanks to @cl0sey
+## Thanks to [@cl0sey][cl0sey]
 
-This repo is a fork of CL0SeY/dotnet-mono-docker!
+This repo is a fork of [CL0SeY/dotnet-mono-docker][forked-repo]!
+
 Thanks!
 
+ [cl0sey]: https://github.com/CL0SeY
+ [forked-repo]: https://github.com/CL0SeY/dotnet-mono-docker
  [dotnet]: https://dot.net
  [mono]: http://www.mono-project.com/
  [hub-dotnet]: https://hub.docker.com/r/microsoft/dotnet
