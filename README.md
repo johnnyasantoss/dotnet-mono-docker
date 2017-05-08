@@ -1,6 +1,10 @@
 # dotnet-mono-docker
 Base docker image including the [dotnet cli][dotnet] and [Mono][mono]
 
+#### Badges
+[![Docker Build Status](https://img.shields.io/docker/build/johnnyasantoss/dotnet-mono-docker.svg)](https://hub.docker.com/r/johnnyasantoss/dotnet-mono-docker/builds/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/johnnyasantoss/dotnet-mono-docker.svg)](https://hub.docker.com/r/johnnyasantoss/dotnet-mono-docker)
+[![Docker Stars](https://img.shields.io/docker/stars/johnnyasantoss/dotnet-mono-docker.svg)](https://hub.docker.com/r/johnnyasantoss/dotnet-mono-docker)
 
 ## Base operating system
 
