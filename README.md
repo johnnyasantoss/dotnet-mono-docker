@@ -4,7 +4,7 @@ Base docker image including the [dotnet cli][dotnet] and [Mono][mono]
 
 ## Base operating system
 
-The base operating system is Debian 8 (Jessie) due to importing from [microsoft/dotnet](hub-dotnet)
+The base operating system is Debian 8 (Jessie) due to importing from [microsoft/dotnet][hub-dotnet]
 
 ## What's included
 
