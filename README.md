@@ -1,34 +1,41 @@
 # dotnet-mono-docker
-Base docker image including the dotnet cli (RTM) and mono
+Base docker image including the [dotnet cli][dotnet] and [Mono][mono]
 
-## Why?
-The microsoft/dotnet image does not have any Mono support.
-
-The previous microsoft/aspnet:latest or :clr tags would allow you to utilise .NET 4.5.1 DLLs with your ASP.NET MVC 6 application.
-
-This docker image intends to fill this gap.
 
 ## Base operating system
 
-The base operating system is Debian 8 (Jessie) due to importing from [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet)
+The base operating system is Debian 8 (Jessie) due to importing from [microsoft/dotnet](hub-dotnet)
 
 ## What's included
 
-### sdk tag (aka latest)
+### SDK tag
 
 Good for building!
 
-- dotnet sdk latest (specific version will come from base image's "sdk" / "latest" tag)
-- Mono (version 4.4.2.11), including ca-certificates-mono, fsharp, mono-vbnc, nuget, referenceassemblies-pcl
+- .NET Core 1.1 SDK
+- Mono (version 4.8.1)
+  - mono-complete
+  - ca-certificates-mono
+  - referenceassemblies-pcl
+  - nuget 3.5.0
 
-### runtime tag
+### Runtime tag
 
-Good for running! (see [http://blog.tomecek.net/post/build-docker-image-in-two-steps/](http://blog.tomecek.net/post/build-docker-image-in-two-steps/) for information on making a two-step docker build process.)
+Good for running!
 
-- dotnet runtime latest (specific version will come from base image's "sdk" / "latest" tag)
-- Mono (version 4.4.2.11)
+- .NET Core 1.1 Runtime
+- Mono (version 4.8.1)
+  - mono-devel
+  - mono-xsp4 (to run ASP.NET applications)
+  - ca-certificates-mono
+  - referenceassemblies-pcl
+  - nuget 3.5.0
 
-## What's not
+## Thanks to @cl0sey
 
-- NodeJS and therefore bower. If you need these, use [cl0sey/dotnet-mono-node-docker](https://github.com/CL0SeY/dotnet-mono-node-docker).
-- An example app! See [cl0sey/dotnet-mono-aspnet-core-example](https://github.com/CL0SeY/dotnet-mono-aspnet-core-example) instead.
+This repo is a fork of CL0SeY/dotnet-mono-docker!
+Thanks!
+
+ [dotnet]: https://dot.net
+ [mono]: http://www.mono-project.com/
+ [hub-dotnet]: https://hub.docker.com/r/microsoft/dotnet
